@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Text on Hover</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .highlight {
+            background-color: transparent; /* Default state */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+            color: black;
+        }
+
+        .highlight:hover {
+            background-color: yellow; /* Highlight background color on hover */
+            color: blue; /* Change text color on hover */
+        }
+
+        /* Additional styling for demo */
+        p {
+            margin: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="highlight">
+      The Data & Design Group is a research group in the Department of Information Science at the University of Colorado Boulder. This page contains information for prospective Ph.D. students about our research, what we can accomplish together, and how to apply.
+    </p>
+
+    <p>
+      I’m recruiting <span class="highlight">Ph.D. students</span> to join the D&D group in Fall 2025 (applications due <span class="highlight">December 1, 2024</span>).
+    </p>
+
+</body>
+</html>
